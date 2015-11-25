@@ -8,7 +8,9 @@ typedef std::string::size_type index;
 	{cout<<"inintlize succeed"<<endl;};
 
 char get() const {return contents[cursor];}
-
+char get(index ht,index wd)const;
+Screen& set(char ch);
+Screen& move(index r, index c);
 private:
 std::string contents;
 index cursor;
